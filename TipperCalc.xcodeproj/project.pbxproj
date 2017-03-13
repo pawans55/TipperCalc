@@ -14,6 +14,7 @@
 		433762421E7645FB00B4A5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433762401E7645FB00B4A5BC /* LaunchScreen.storyboard */; };
 		4337624D1E7645FB00B4A5BC /* TipperCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337624C1E7645FB00B4A5BC /* TipperCalcTests.swift */; };
 		433762581E7645FB00B4A5BC /* TipperCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433762571E7645FB00B4A5BC /* TipperCalcUITests.swift */; };
+		433762661E765D5600B4A5BC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433762651E765D5600B4A5BC /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		433762531E7645FB00B4A5BC /* TipperCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipperCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		433762571E7645FB00B4A5BC /* TipperCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipperCalcUITests.swift; sourceTree = "<group>"; };
 		433762591E7645FB00B4A5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433762651E765D5600B4A5BC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				433762371E7645FB00B4A5BC /* AppDelegate.swift */,
 				433762391E7645FB00B4A5BC /* ViewController.swift */,
 				4337623B1E7645FB00B4A5BC /* Main.storyboard */,
+				433762651E765D5600B4A5BC /* SettingsViewController.swift */,
 				4337623E1E7645FB00B4A5BC /* Assets.xcassets */,
 				433762401E7645FB00B4A5BC /* LaunchScreen.storyboard */,
 				433762431E7645FB00B4A5BC /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				4337623A1E7645FB00B4A5BC /* ViewController.swift in Sources */,
 				433762381E7645FB00B4A5BC /* AppDelegate.swift in Sources */,
+				433762661E765D5600B4A5BC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
