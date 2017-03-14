@@ -13,9 +13,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var totallabel: UILabel!
     @IBOutlet weak var tiplabel: UILabel!
      @IBOutlet weak var tipControl: UISegmentedControl!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("view did disappear")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        tipControl.isSelected = false
+        tipControl.selectedSegmentIndex = UISegmentedControlNoSegment
     }
 
     
@@ -33,17 +56,20 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
-        tiplabel.text = String(format :"%f.2f",tip)
-        totallabel.text = String(format :"%f.2f",total)
+        tiplabel.text = String(format :"%.2f",tip)
+        totallabel.text = String(format :"%.2f",total)
     }
     
     @IBAction func calculator(_ sender: Any) {
     }
 
-    @IBAction func onTap(sender: AnyObject ) {
-        
+  
+    @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
+    
+    
   
 }
+
 
